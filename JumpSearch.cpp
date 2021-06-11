@@ -11,7 +11,7 @@ int jumpSearch(int arr[], int x, int n)
 	while (arr[min(step, n) - 1] < x)
 	{
 		prev = step;
-		step == sqrt(n);
+		step += sqrt(n);
 
 		if (prev >= n)
 		{
