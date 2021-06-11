@@ -23,11 +23,11 @@ int main(void)
 
 	if (result == -1)
 	{
-		std::cout << "Element is not persent in array";
+		std::cout << "Element is not present in array";
 	}
 	else
 	{
-		std::cout << "Element is persent at index " << result;
+		std::cout << "Element is present at index " << result;
 	}
 
 	return 0;
