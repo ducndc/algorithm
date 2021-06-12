@@ -19,7 +19,7 @@ int interpolationSearch(int arr[], int n, int x)
 			return -1;
 		}
 
-		int pos = lo + (((double)(hi-lo) / (arr[hi] - arr[lo])) * (x - arr[lo]));
+		int pos = lo + (x - arr[lo]) * (double)(hi-lo) / (arr[hi] - arr[lo]);
 
 		if (arr[pos] == x)
 		{
