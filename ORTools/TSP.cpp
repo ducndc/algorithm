@@ -56,7 +56,7 @@ namespace operations_research
     LOG (INFO) << "Problem solved in " << routing.solver ()->wall_time () << "ms";
   }
 
-  void Tsp()
+  void Tsp ()
   {
     /*
      * Instantiate the data problem
@@ -72,7 +72,7 @@ namespace operations_research
     /*
      * Create Routing Model
      */
-    RoutingModel routing(manager);
+    RoutingModel routing (manager);
 
     const int transit_callback_index = routing.RegisterTransitCallback (
       [&data, &manager](int64_t from_index, int64_t to_index)->int64_t {
