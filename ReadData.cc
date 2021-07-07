@@ -36,13 +36,13 @@ void ReadData (std::string filename, std::vector<std::vector<int>>& arr)
 						{
 							if (line[i] == ' ')
 								{
-									row.push_back (std::atoi (temp));
+									row.push_back (std::atoi (temp.c_str ()));
 									temp.clear ();
 								}
 							else if (i == num-1)
 								{
 									temp.push_back (line[i]);
-									row.push_back (std::atoi (temp));
+									row.push_back (std::atoi (temp.c_str ()));
 								} 
 							else
 								{
