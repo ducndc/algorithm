@@ -87,7 +87,7 @@ int Individual::cal_fitness ()
 	return fitness;
 }
 
-bool operator<(const Individual &ind1, const Individual &ind2)
+bool operator < (const Individual &ind1, const Individual &ind2)
 {
 	return ind1.fitness < ind2.fitness;
 }
