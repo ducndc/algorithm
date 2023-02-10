@@ -13,7 +13,7 @@ int binarySearch(int arr[], int left, int right, int x)
 			return middle;
 		}
 
-		if (arr[m] < x)
+		if (arr[middle] < x)
 		{
 			left = middle + 1;
 		}
@@ -36,11 +36,11 @@ int main(void)
 
 	if (result == -1)
 	{
-		cout << "Element is not present in array";
+		cout << "Element is not present in array" << endl;
 	}
 	else
 	{
-		cout << "Element is present at index " << result;
+		cout << "Element is present at index " << result << endl;
 	}
 
 	return 0;
