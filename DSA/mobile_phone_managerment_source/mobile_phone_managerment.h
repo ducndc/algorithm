@@ -12,7 +12,7 @@
 #define MAX_CODE	10
 #define MAX_NAME	20
 
-typedef struct mobile_phone *link;
+typedef struct mobile_phone link;
 
 struct mobile_phone {
 	char code[MAX_CODE];
@@ -30,14 +30,18 @@ int is_empty(mobile_phone_t* const head);
 
 void add_mobile_phone_in_list(mobile_phone_t **head);
 
-void remove_mobile_phone_in_list(mobile_phone_t **head, int code);
+void remove_mobile_phone_in_list_by_code(mobile_phone_t **head);
 
-void edit_mobile_phone_information_in_list(mobile_phone_t **head, int code);
+void edit_inventory_number_of_mobile_phone_by_code(mobile_phone_t *head);
 
-void search_mobile_phine_in_list(mobile_phone_t **head, int price);
+void search_mobile_phone_by_price(mobile_phone_t *head);
 
-void print_mobile_phone_list(mobile_phone_t **head);
+void print_mobile_phone_list(mobile_phone_t *head);
 
+void print_instruction();
 
+void reverse_mobile_phone_list(mobile_phone_t **head);
+
+#endif
 
 
