@@ -15,7 +15,7 @@ staff_tree_t *create_staff_node()
 	if (new_staff == NULL)
 	{
 		printf("malloc fail!");
-		return -1;
+		return NULL;
 	}
 
 	printf("Enter ID of staff: ");
